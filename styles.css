@@ -1,0 +1,117 @@
+/* --- Estilos Globales y Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4ede4; /* Tono crema acogedor */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* --- Encabezado (Header) --- */
+header {
+    background-color: #e8d8c8;
+    text-align: center;
+    padding: 30px 20px;
+    margin: 7px 0px;
+}
+
+/* --- Menú de Navegación --- */
+nav {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease; /* Animación de despliegue */
+    opacity: 0;
+    background-color: #d6c2ad;
+    text-align: center;
+}
+
+/* Estado activo del menú (cuando se abre) */
+nav.activo {
+    height: 30px;
+    opacity: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 1px;
+    list-style: none;
+}
+
+/* Color y decoracion de los links del navegador */
+
+nav ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+/* Botón que controla el menú */
+#boton {
+    display: block;
+    margin: 0 auto;
+    background-color: #d6c2af;
+    border-color: #ead2c6;
+}
+
+/* --- Secciones de Contenido (General) --- */
+section {
+    background-color: #f1e5d9;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+/* --- Sección específica de la Tienda --- */
+#tienda {
+    background-color: #ead2c6; /* Tono rosa suave para destacar */
+}
+
+
+/* Tarjetas individuales de perfumes */
+.perfume {
+    width: 250px;
+    min-height: 180px;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor flexible para los perfumes */
+.lista-perfumes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+}
+
+/* --- Notificaciones (Mensaje de Compra) --- */
+#mensajito {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: black;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* --- Pie de página (Footer) --- */
+footer { 
+    display: flex;
+    justify-content: center;
+    background-color: #b89b84;
+    padding: 15px;
+}
