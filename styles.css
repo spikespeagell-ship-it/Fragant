@@ -174,3 +174,24 @@ width:90%;
 }
 
 }
+
+#lista-de-perfumes{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.perfume {
+transition: transform 0.3 ease, box-shadow 0.3s ease;
+}
+
+.perfume:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.btn-agregar:hover {
+background-color: #c8a98f;
+color: white;
+}
