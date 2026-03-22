@@ -8,7 +8,7 @@ btn.addEventListener("click", () => {
 const mensajito = document.getElementById("mensajito");
 
 // 🔥 MOSTRAR PERFUMES DESDE BACKEND
-fetch("https://didactic-acorn-5v54jj6v6prh7xw9-3000.app.github.dev/perfumes")
+fetch("/perfumes")
 .then(res => res.json())
 .then(data => {
 
