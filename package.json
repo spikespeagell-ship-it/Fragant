@@ -1,0 +1,26 @@
+{
+  "name": "fragant",
+  "version": "1.0.0",
+  "description": "Cute and professional landing page",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spikespeagell-ship-it/Fragant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/spikespeagell-ship-it/Fragant/issues"
+  },
+  "homepage": "https://github.com/spikespeagell-ship-it/Fragant#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongodb": "^7.1.0"
+  }
+}

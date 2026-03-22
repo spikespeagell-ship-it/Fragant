@@ -1,0 +1,198 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#f4ede4;
+font-family:Arial;
+line-height:1.6;
+}
+header{
+background:#e8d8c8;
+text-align:center;
+padding:30px;
+}
+
+#boton{
+display:block;
+margin:20px auto;
+padding:10px 20px;
+background:#d6c2af;
+border:none;
+border-radius: 5px;
+cursor:pointer;
+}
+
+#boton:hover{
+background: #c77f7f;
+transition: 0.2s;
+}
+
+nav{
+max-height: 0;
+overflow:hidden;
+transition: 0.2s ease;
+opacity:0;
+background:#d6c2ad;
+}
+
+nav.activo{
+max-height:300px;
+padding-bottom: 10px;
+opacity:1;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+gap:100px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:bold;
+}
+
+nav a:hover{
+color: #342011;
+transition:0.3s;
+}
+
+
+section{
+background:#f1e5d9;
+max-width:900px;
+margin:40px auto;
+padding:30px;
+border-radius:8px;
+}
+
+
+
+#inicio:hover{
+background: #aaa7a7;
+transition:0.2s;
+}
+
+#info:hover {
+background: #aaa7a7;
+transition:0.2s;
+}
+
+#contacto:hover{
+background: #aaa7a7;
+transition: 0.2s;
+}
+
+#tienda{
+background:#ead2c6;
+}
+
+#tienda:hover{
+background: #f8b8b8;
+transition: 0.2s;
+}
+
+.contenedor{
+margin-bottom:30px;
+}
+
+.lista-perfumes{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+list-style:none;
+}
+
+.perfume{
+width:250px;
+padding:16px;
+border:1px solid #914e4e;
+border-radius:8px;
+background: #d88e8e;
+}
+
+.perfume:hover {
+    transform:translateY(-5px);
+    box-shadow:0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.perfume button{
+margin-top:10px;
+padding:8px;
+background: #f5aaaa;
+border-color: #c27272;
+border-radius: 5px;
+cursor:pointer;
+}
+
+#mensajito{
+display:none;
+position:fixed;
+bottom:20px;
+right:20px;
+background:black;
+color:white;
+padding:12px 18px;
+border-radius:8px;
+}
+
+footer{
+display:flex;
+justify-content:center;
+background:#b89b84;
+padding:15px;
+}
+
+@media (max-width:768px){
+
+nav ul{
+flex-direction:column;
+align-items:center;
+gap:15px;
+padding:10px;
+}
+
+nav.activo{
+height:120px;
+padding-bottom: 180px;
+}
+
+.lista-perfumes{
+flex-direction:column;
+align-items:center;
+}
+
+.perfume{
+width:90%;
+}
+
+}
+
+#lista-de-perfumes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.perfume {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.perfume:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+
+.btn-agregar:hover {
+    background-color: #c8a98f;
+    color: white;
+}
