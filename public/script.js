@@ -8,11 +8,11 @@ btn.addEventListener("click", () => {
 const mensajito = document.getElementById("mensajito");
 
 // 🔥 MOSTRAR PERFUMES DESDE BACKEND
-fetch("/perfumes")
+fetch("/contacto")
 .then(res => res.json())
 .then(data => {
 
-    const contenedor = document.getElementById("lista-perfumes");
+    const contenedor = document.getElementById("lista-de-perfumes");
 
     data.forEach(perfume => {
 
@@ -28,24 +28,47 @@ fetch("/perfumes")
         contenedor.appendChild(div);
     });
 
-    
-        document.querySelectorAll(".btn-agregar").forEach(boton => {
-        boton.addEventListener("click", () => {
-            mensajito.textContent = "🌸 Adquirido! Agradecemos su compra 🌻";
-            mensajito.style.display = "block";
+document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("btn-agregar")) {
 
-            setTimeout(() => {
-                mensajito.style.display = "none";
-            }, 3000);
-        });
-    });
+        const mensajito = document.getElementById("mensajito");
+
+        mensajito.textContent = "🌸 Adquirido! Gracias por tu compra 🌻";
+        mensajito.style.display = "block";
+
+        setTimeout(() => {
+            mensajito.style.display = "none";
+        }, 3000);
+    }
+});
+
 });
 
 // FORMULARIO
 const formulario = document.getElementById("formulario");
 
-formulario.addEventListener("submit", (e) => {
+formulario.addEventListener("submit", async (e) => {
     e.preventDefault();
-    alert("Mensaje enviado correctamente ✔");
-    formulario.reset();
+
+    const nombre = document.getElementById("nombre").value;
+    const email = document.getElementById("email").value;
+    const mensaje = document.getElementById("mensaje").value;
+
+    try {
+        const res = await fetch("/contacto", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ nombre, email, mensaje })
+        });
+
+        const data = await res.json();
+
+        alert("Mensaje enviado y guardado ✔");
+        formulario.reset();
+
+    } catch (error) {
+        alert("Error al enviar mensaje");
+    }
 });

@@ -55,13 +55,13 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 
 <section id="tienda">
 
-<h2>Tienda</h2>
+<h2 id="tiendita">Tienda</h2>
 
 <div id="lista-de-perfumes"></div>
 
 <div class="contenedor">
 
-<h3>Florales</h3>
+<h3 class="categorias">Florales</h3>
 
 <ul class="lista-perfumes">
 
@@ -71,6 +71,7 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <p>Fragancia delicada con notas florales suaves.</p>
 <button class="btn-agregar">Comprar</button>
 </div>
+<img src="images/rose.jpeg" alt="img" class="images">
 </li>
 
 <li>
@@ -78,6 +79,7 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <p>Aroma elegante con presencia de jazmín.</p>
 <button class="btn-agregar">Comprar</button>
 </div>
+<img src="images/jasmine.jpeg" alt="img" class="images">
 </li>
 
 <li>
@@ -85,6 +87,7 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <p>Fragancia fresca, ligera y encantadora.</p>
 <button class="btn-agregar">Comprar</button>
 </div>
+<img src="images/bloom.jpeg" alt="img" class="images">
 </li>
 
 </ul>
@@ -92,7 +95,7 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 
 <div class="contenedor">
 
-<h3>Amaderados</h3>
+<h3 class="categorias">Amaderados</h3>
 
 <ul class="lista-perfumes">
 
@@ -102,12 +105,16 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <p>Perfume profundo con notas amaderadas.</p>
 <button class="btn-agregar">Comprar</button>
 </div>
+<img src="images/cedar.jpeg" alt="img" class="images">
 </li>
 
 <li><div class="perfume" data-nombre="Amber Woods">
 <h4>Amber Woods</h4>
 <p>Aroma cálido con toque ambarino.</p>
-<button class="btn-agregar">Comprar</button></div></li>
+<button class="btn-agregar">Comprar</button>
+</div>
+<img src="images/amber.jpeg" alt="img" class="images">
+</li>
 
 <li>
 <div class="perfume" data-nombre="Dark Oak">
@@ -115,13 +122,14 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <p>Fragancia intensa inspirada en maderas oscuras.</p>
 <button class="btn-agregar">Comprar</button>
 </div>
+<img src="images/dark.jpeg" alt="img" class="images">
 </li>
 
 </ul>
 </div>
 
 <div class="contenedor">
-<h3>Frutales y Cítricos</h3>
+<h3 class="categorias">Frutales y Cítricos</h3>
 
 <ul class="lista-perfumes">
 
@@ -131,13 +139,17 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <p>Aroma fresco, vibrante e inconfundible.</p>
 <button class="btn-agregar">Comprar</button>
 </div>
+<img src="images/citrus.jpeg" alt="img" class="images">
 </li>
+
 <li>
 <div class="perfume" data-nombre="Golden Peach">
 <h4>Golden Peach</h4>
 <p>Fragancia dulce, unica y luminosa.</p>
 <button class="btn-agregar">Comprar</button>
-</div></li>
+</div> 
+<img src="images/golden.jpeg" alt="img" class="images">
+</li>
 
 <li>
 <div class="perfume" data-nombre="Fresh Lime">
@@ -145,6 +157,7 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <p>Perfume refrescante y moderno.</p>
 <button class="btn-agregar">Comprar</button>
 </div>
+<img src="images/fresh.jpeg" alt="img" class="images">
 </li>
 
 </ul>
@@ -158,14 +171,14 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <form id="formulario">
 
 <label for="nombre">Nombre</label><br>
-<input type="text" id="nombre" required><br><br>
+<input type="text" id="nombre" required placeholder="Your name here"><br><br>
 
 <label for="email">Email</label><br>
-<input type="email" id="email" required><br><br>
+<input type="email" id="email" required placeholder="example@gmail.com"><br><br>
 
-<label for="mensaje">Mensaje</label><br><textarea id="mensaje" required></textarea><br><br>
+<label for="mensaje">Mensaje</label><br><textarea id="mensaje" required placeholder="type a message..."></textarea><br><br>
 
-<button type="submit">Enviar</button>
+<button type="submit" id="contact-btn">Enviar</button>
 
 </form>
 
@@ -176,7 +189,7 @@ Garantizamos el buen trato y la seguridad de nuestros clientes.
 <div id="mensajito"></div>
 
 <footer>
-<p>© Fragant Fragances 2025</p>
+<p>© Fragant Fragances 2026</p>
 </footer>
 <script src="script.js"></script>
 
